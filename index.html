@@ -6,170 +6,164 @@
     <title>Liam Witterick | CV</title>
     <meta
       name="description"
-      content="CV of Liam Witterick, DevOps Engineer specializing in CI/CD, cloud platforms, and container technologies."
+      content="Professional CV website for Liam Witterick: DevOps experience, skills, and education."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page">
-      <header class="top">
-        <div>
-          <h1>Liam Witterick</h1>
-          <p class="intro">
-            DevOps Engineer with expertise in CI/CD, system administration, and cloud &amp;
-            containerisation technologies, delivering efficient solutions for improved software
-            development.
-          </p>
+    <header class="hero" id="top">
+      <div class="container">
+        <p class="kicker">DevOps Engineer</p>
+        <h1>Liam Witterick</h1>
+        <p class="subtitle">CI/CD · Cloud Platforms · Containers · System Administration</p>
+        <p class="summary">
+          DevOps Engineer with expertise in CI/CD, system administration, and cloud &amp;
+          containerisation technologies, delivering efficient solutions for improved software
+          development.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:liam.witterick@gmail.com">Email Me</a>
+          <a class="btn" href="tel:07931976436">Call 07931976436</a>
         </div>
-        <address>
-          <a href="tel:07931976436">07931976436</a>
-          <a href="mailto:liam.witterick@gmail.com">liam.witterick@gmail.com</a>
-        </address>
-      </header>
+      </div>
+    </header>
 
-      <section class="layout">
-        <div class="main-col">
+    <main>
+      <section class="section" id="experience">
+        <div class="container">
           <h2>Experience</h2>
 
-          <article class="job">
-            <h3>EcoOnline, Liverpool, UK — <span>CloudOps Engineer</span></h3>
-            <p class="date">2019 - Present</p>
+          <article class="card">
+            <div class="card-header">
+              <h3>EcoOnline, Liverpool, UK · CloudOps Engineer</h3>
+              <p>2019 – Present</p>
+            </div>
             <p>
-              As a CloudOps Engineer at EcoOnline, my responsibilities include supporting and
-              optimising CI/CD pipelines for a range of products and services, including Azure
-              DevOps, CodePipeline, and GitHub Actions. I leverage cloud offerings on both Azure
-              and AWS platforms to ensure infrastructure is always scalable, fault-tolerant, and
-              highly available.
+              Supporting and optimising CI/CD pipelines for multiple products and services using
+              Azure DevOps, AWS CodePipeline, and GitHub Actions across Azure and AWS platforms.
             </p>
             <p>
-              In my role, I work with a variety of applications, some built as Docker images and
-              deployed as containers on Kubernetes, while others are deployed on VMs (for example,
-              AWS EC2 instances). I collaborate with development teams to keep applications
-              optimised for performance and scalability.
+              Working across containerised and VM-based workloads (including AWS EC2), partnering
+              with development teams to improve performance, scalability, and reliability.
             </p>
             <p>
-              I recently led a migration project moving EC2-hosted application services to an EC2
-              AutoScaling Group, resulting in better scalability and reduced hosting costs. I also
-              implemented a blue-green deployment strategy with canary testing to improve
-              reliability and reduce downtime risk.
+              Led migration of EC2-hosted services to EC2 Auto Scaling groups to improve
+              scalability and reduce hosting costs. Implemented blue-green deployments with canary
+              testing to lower risk during rollouts.
             </p>
             <p>
-              In addition, I handle sysadmin responsibilities including server maintenance,
-              networking and storage configuration, security monitoring, and ensuring systems remain
-              up-to-date and secure.
+              Also responsible for sysadmin duties including server management, storage/network
+              configuration, security monitoring, and keeping systems up-to-date and secure.
             </p>
           </article>
 
-          <article class="job">
-            <h3>Experian, Southport, UK — <span>Senior DevOps Engineer</span></h3>
-            <p class="date">2017 - 2019</p>
+          <article class="card">
+            <div class="card-header">
+              <h3>Experian, Southport, UK · Senior DevOps Engineer</h3>
+              <p>2017 – 2019</p>
+            </div>
             <p>
-              As a Senior DevOps Engineer at Experian, I was part of a team focused on implementing
-              and improving DevOps practices and tooling. I managed and improved CI/CD processes,
-              primarily using Jenkins and Chef, across a large suite of products.
+              Improved DevOps tooling and delivery practices across a large suite of products,
+              managing CI/CD processes using Jenkins and Chef.
             </p>
             <p>
-              I supported development and testing environments created with infrastructure as code,
-              helping releases run smoothly with minimal downtime. I worked with development teams
-              to implement automated testing, version control, and deployment processes, while also
-              conducting code reviews and sharing best practices.
+              Supported development and test environments built with infrastructure as code,
+              helping teams release with minimal downtime and better consistency.
             </p>
             <p>
-              These improvements significantly reduced time to deliver features and fixes, reduced
-              deployment-related incidents, and improved the reliability of the delivery pipeline.
+              Collaborated with development teams on automated testing, version control, and
+              deployment workflows, reducing deployment incidents and improving delivery speed.
             </p>
           </article>
 
-          <article class="job">
-            <h3>Experian, Southport, UK — <span>Technical Analyst (Sysadmin)</span></h3>
-            <p class="date">2014 - 2017</p>
+          <article class="card">
+            <div class="card-header">
+              <h3>Experian, Southport, UK · Technical Analyst (Sysadmin)</h3>
+              <p>2014 – 2017</p>
+            </div>
             <p>
-              In this role, I supported Hunter, a multi-million-pound fraud detection service. I
-              worked directly with clients, addressed requests and incidents, and collaborated with
-              engineering teams to perform root-cause analysis and system improvements.
+              Supported Hunter (a fraud detection service), handling client requests, issue
+              investigation, and root-cause analysis with cross-functional teams.
             </p>
             <p>
-              I managed over 40 virtual machines (Windows and Linux), deployed application releases,
-              and performed system tuning and configuration to meet client needs and improve
-              performance. The role required strong analytical skills, attention to detail, and
-              effective collaboration across clients, developers, and operations teams.
+              Managed 40+ virtual machines (Windows and Linux), supported application releases, and
+              tuned system performance through configuration and optimisation.
+            </p>
+            <p>
+              Worked closely with clients, developers, and operations teams to improve service
+              reliability and ensure robust production support.
             </p>
           </article>
         </div>
+      </section>
 
-        <aside class="side-col">
-          <section>
-            <h2>Skills</h2>
-            <h4>CI/CD pipelines</h4>
-            <ul>
-              <li>Jenkins</li>
-              <li>Azure DevOps</li>
-              <li>GitHub Actions</li>
-              <li>AWS CodePipeline</li>
-            </ul>
+      <section class="section alt" id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skill-groups">
+            <article class="card">
+              <h3>CI/CD Pipelines</h3>
+              <ul>
+                <li>Jenkins</li>
+                <li>Azure DevOps</li>
+                <li>GitHub Actions</li>
+                <li>AWS CodePipeline</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Cloud, Containers &amp; IaC</h3>
+              <ul>
+                <li>AWS, Azure</li>
+                <li>Docker, Kubernetes</li>
+                <li>Terraform, AWS CDK, CloudFormation</li>
+              </ul>
+            </article>
+            <article class="card">
+              <h3>Systems &amp; Observability</h3>
+              <ul>
+                <li>Linux, Windows</li>
+                <li>PowerShell, Bash, Python</li>
+                <li>Prometheus, Grafana, ELK Stack</li>
+                <li>Git</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <h4>Container technologies</h4>
-            <ul>
-              <li>Docker</li>
-              <li>Kubernetes</li>
-            </ul>
+      <section class="section" id="education">
+        <div class="container">
+          <h2>Education</h2>
+          <article class="card">
+            <div class="card-header">
+              <h3>Liverpool John Moores’ University, Liverpool · BSc Software Engineering</h3>
+              <p>2010 – 2014</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-            <h4>Cloud platforms</h4>
-            <ul>
-              <li>AWS</li>
-              <li>Azure</li>
-            </ul>
-
-            <h4>Scripting languages</h4>
-            <ul>
-              <li>PowerShell</li>
-              <li>Bash</li>
-              <li>Python</li>
-            </ul>
-
-            <h4>System administration</h4>
-            <ul>
-              <li>Linux</li>
-              <li>Windows</li>
-            </ul>
-
-            <h4>Infrastructure as code</h4>
-            <ul>
-              <li>Terraform</li>
-              <li>AWS CDK</li>
-              <li>CloudFormation</li>
-            </ul>
-
-            <h4>Version control</h4>
-            <ul>
-              <li>Git</li>
-            </ul>
-
-            <h4>Monitoring &amp; logging</h4>
-            <ul>
-              <li>Prometheus</li>
-              <li>Grafana</li>
-              <li>ELK Stack</li>
-            </ul>
-          </section>
-
-          <section class="education">
-            <h2>Education</h2>
-            <h3>Liverpool John Moores’ University, Liverpool — <span>BSc Software Engineering</span></h3>
-            <p class="date">2010 - 2014</p>
-          </section>
-        </aside>
+      <section class="section alt" id="contact">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>
+            Phone: <a href="tel:07931976436">07931976436</a> · Email:
+            <a href="mailto:liam.witterick@gmail.com">liam.witterick@gmail.com</a>
+          </p>
+        </div>
       </section>
     </main>
 
     <footer>
-      <p>© <span id="year"></span> Liam Witterick</p>
+      <div class="container">
+        <p>© <span id="year"></span> Liam Witterick</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
