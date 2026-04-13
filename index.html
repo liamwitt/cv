@@ -17,151 +17,107 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero" id="top">
-      <div class="container">
-        <p class="kicker">DevOps Engineer</p>
-        <h1>Liam Witterick</h1>
-        <p class="subtitle">CI/CD · Cloud Platforms · Containers · System Administration</p>
-        <p class="summary">
-          DevOps Engineer with expertise in CI/CD, system administration, and cloud &amp;
-          containerisation technologies, delivering efficient solutions for improved software
-          development.
-        </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://www.linkedin.com/in/liam-witterick-638255bb?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
-          <button class="btn" id="downloadPdf" type="button">Download PDF</button>
-        </div>
-      </div>
-    </header>
+    <main class="resume-shell">
+      <section class="hero-card">
+        <aside class="left-panel">
+          <div class="avatar">LW</div>
+          <h2>Liam Witterick</h2>
+          <p>DevOps Engineer</p>
 
-    <main>
-      <section class="section" id="experience">
-        <div class="container">
-          <h2>Experience</h2>
+          <a
+            class="panel-btn primary"
+            href="https://www.linkedin.com/in/liam-witterick-638255bb?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <button class="panel-btn" id="downloadPdf" type="button">Download CV (PDF)</button>
 
-          <article class="card">
-            <div class="card-header">
-              <h3>EcoOnline, Liverpool, UK · CloudOps Engineer</h3>
-              <p>2019 – Present</p>
-            </div>
-            <p>
-              Supporting and optimising CI/CD pipelines for multiple products and services using
-              Azure DevOps, AWS CodePipeline, and GitHub Actions across Azure and AWS platforms.
-            </p>
-            <p>
-              Working across containerised and VM-based workloads (including AWS EC2), partnering
-              with development teams to improve performance, scalability, and reliability.
-            </p>
-            <p>
-              Led migration of EC2-hosted services to EC2 Auto Scaling groups to improve
-              scalability and reduce hosting costs. Implemented blue-green deployments with canary
-              testing to lower risk during rollouts.
-            </p>
-            <p>
-              Also responsible for sysadmin duties including server management, storage/network
-              configuration, security monitoring, and keeping systems up-to-date and secure.
-            </p>
-          </article>
+          <small>© <span id="year"></span> Liam Witterick</small>
+        </aside>
 
-          <article class="card">
-            <div class="card-header">
-              <h3>Experian, Southport, UK · Senior DevOps Engineer</h3>
-              <p>2017 – 2019</p>
-            </div>
+        <div class="main-panel">
+          <div class="intro-copy">
+            <p class="eyebrow">DevOps profile</p>
+            <h1>Liam Witterick</h1>
             <p>
-              Improved DevOps tooling and delivery practices across a large suite of products,
-              managing CI/CD processes using Jenkins and Chef.
+              DevOps Engineer with expertise in CI/CD, system administration, and cloud &amp;
+              containerisation technologies, delivering efficient solutions for improved software
+              development.
             </p>
-            <p>
-              Supported development and test environments built with infrastructure as code,
-              helping teams release with minimal downtime and better consistency.
-            </p>
-            <p>
-              Collaborated with development teams on automated testing, version control, and
-              deployment workflows, reducing deployment incidents and improving delivery speed.
-            </p>
-          </article>
-
-          <article class="card">
-            <div class="card-header">
-              <h3>Experian, Southport, UK · Technical Analyst (Sysadmin)</h3>
-              <p>2014 – 2017</p>
-            </div>
-            <p>
-              Supported Hunter (a fraud detection service), handling client requests, issue
-              investigation, and root-cause analysis with cross-functional teams.
-            </p>
-            <p>
-              Managed 40+ virtual machines (Windows and Linux), supported application releases, and
-              tuned system performance through configuration and optimisation.
-            </p>
-            <p>
-              Worked closely with clients, developers, and operations teams to improve service
-              reliability and ensure robust production support.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section alt" id="skills">
-        <div class="container">
-          <h2>Skills</h2>
-          <div class="skill-groups">
-            <article class="card">
-              <h3>CI/CD Pipelines</h3>
-              <ul>
-                <li>Jenkins</li>
-                <li>Azure DevOps</li>
-                <li>GitHub Actions</li>
-                <li>AWS CodePipeline</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Cloud, Containers &amp; IaC</h3>
-              <ul>
-                <li>AWS, Azure</li>
-                <li>Docker, Kubernetes</li>
-                <li>Terraform, AWS CDK, CloudFormation</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h3>Systems &amp; Observability</h3>
-              <ul>
-                <li>Linux, Windows</li>
-                <li>PowerShell, Bash, Python</li>
-                <li>Prometheus, Grafana, ELK Stack</li>
-                <li>Git</li>
-              </ul>
-            </article>
           </div>
+          <div class="profile-photo" aria-hidden="true"></div>
+        </div>
+
+        <nav class="icon-rail" aria-label="Quick links">
+          <a href="#experience" title="Experience">💼</a>
+          <a href="#skills" title="Skills">🧰</a>
+          <a href="#education" title="Education">🎓</a>
+        </nav>
+      </section>
+
+      <section class="content" id="experience">
+        <h3>Experience</h3>
+        <article class="item">
+          <div class="item-head">
+            <h4>EcoOnline, Liverpool, UK · CloudOps Engineer</h4>
+            <span>2019 – Present</span>
+          </div>
+          <p>
+            Supporting and optimising CI/CD pipelines for multiple products and services using Azure
+            DevOps, AWS CodePipeline, and GitHub Actions across Azure and AWS platforms.
+          </p>
+          <p>
+            Led migration of EC2-hosted services to EC2 Auto Scaling groups to improve scalability
+            and reduce hosting costs, and implemented blue-green deployments with canary testing.
+          </p>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h4>Experian, Southport, UK · Senior DevOps Engineer</h4>
+            <span>2017 – 2019</span>
+          </div>
+          <p>
+            Improved DevOps tooling and delivery practices across a large suite of products,
+            managing CI/CD processes using Jenkins and Chef.
+          </p>
+        </article>
+
+        <article class="item">
+          <div class="item-head">
+            <h4>Experian, Southport, UK · Technical Analyst (Sysadmin)</h4>
+            <span>2014 – 2017</span>
+          </div>
+          <p>
+            Supported production services, managed 40+ virtual machines (Windows and Linux), and
+            collaborated with teams on incident handling, deployment, and performance tuning.
+          </p>
+        </article>
+      </section>
+
+      <section class="content" id="skills">
+        <h3>Skills</h3>
+        <div class="skills-grid">
+          <div class="item"><strong>CI/CD:</strong> Jenkins, Azure DevOps, GitHub Actions, AWS CodePipeline</div>
+          <div class="item"><strong>Cloud:</strong> AWS, Azure</div>
+          <div class="item"><strong>Containers:</strong> Docker, Kubernetes</div>
+          <div class="item"><strong>IaC:</strong> Terraform, AWS CDK, CloudFormation</div>
+          <div class="item"><strong>Scripting:</strong> PowerShell, Bash, Python</div>
+          <div class="item"><strong>Monitoring:</strong> Prometheus, Grafana, ELK Stack</div>
         </div>
       </section>
 
-      <section class="section" id="education">
-        <div class="container">
-          <h2>Education</h2>
-          <article class="card">
-            <div class="card-header">
-              <h3>Liverpool John Moores’ University, Liverpool · BSc Software Engineering</h3>
-              <p>2010 – 2014</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section alt" id="contact">
-        <div class="container">
-          <h2>Contact</h2>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/liam-witterick-638255bb?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">linkedin.com/in/liam-witterick-638255bb</a></p>
-        </div>
+      <section class="content" id="education">
+        <h3>Education</h3>
+        <article class="item">
+          <div class="item-head">
+            <h4>Liverpool John Moores’ University, Liverpool · BSc Software Engineering</h4>
+            <span>2010 – 2014</span>
+          </div>
+        </article>
       </section>
     </main>
-
-    <footer>
-      <div class="container">
-        <p>© <span id="year"></span> Liam Witterick</p>
-      </div>
-    </footer>
 
     <script src="script.js"></script>
   </body>
