@@ -1,46 +1,27 @@
-# CV Website (Vercel-ready)
+# Liam Witterick CV Website (Vercel-ready)
 
-This repository contains a simple, fast static CV website ready to deploy on Vercel.
+A static, responsive CV website built for deployment on Vercel.
 
-## Files
+## Edit content
 
-- `index.html` – main CV content and structure
-- `styles.css` – responsive styling
-- `script.js` – sets footer year dynamically
-- `vercel.json` – Vercel config
+Update personal content in `index.html`:
 
-## Customize your CV
+- Header name, intro, and contact details
+- Experience entries
+- Skills lists
+- Education details
 
-1. Edit `index.html`:
-   - Replace **Your Name**, title, summary, and contact links.
-   - Update experience, education, skills, and project sections.
-2. Optionally adjust colors and spacing in `styles.css`.
-
-## Run locally
-
-You can preview locally with any static server.
+## Local preview
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open <http://localhost:8000>.
+Open <http://localhost:8000>.
 
 ## Deploy to Vercel
 
-### Option A: Vercel Dashboard
-
-1. Push this repo to GitHub/GitLab/Bitbucket.
-2. In Vercel, click **Add New... → Project**.
-3. Import your repository.
-4. Keep defaults (Framework Preset: **Other**).
-5. Click **Deploy**.
-
-### Option B: Vercel CLI
-
-```bash
-npm i -g vercel
-vercel
-```
-
-Follow prompts to deploy.
+1. Push this repository to GitHub/GitLab/Bitbucket.
+2. In Vercel, import the repository as a new project.
+3. Use default settings (Framework Preset: **Other**).
+4. Deploy.
