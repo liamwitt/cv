@@ -148,3 +148,55 @@ footer {
     align-items: flex-start;
   }
 }
+
+
+button.btn {
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 11pt;
+  }
+
+  .hero,
+  .section,
+  .section.alt,
+  footer {
+    border: 0 !important;
+    background: #fff !important;
+    padding: 0.5rem 0 !important;
+  }
+
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .card {
+    background: #fff !important;
+    color: #111 !important;
+    border: 1px solid #ddd !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .btn,
+  #downloadPdf {
+    display: none !important;
+  }
+
+  a {
+    color: #111 !important;
+    text-decoration: none;
+  }
+
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+}
