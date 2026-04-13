@@ -1,0 +1,154 @@
+:root {
+  --bg: #0b1020;
+  --panel: #101832;
+  --text: #e8edff;
+  --muted: #a9b4d0;
+  --accent: #7aa2ff;
+  --accent-strong: #4d7fff;
+  --line: #22315f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: linear-gradient(180deg, #070b18 0%, #0c1330 35%, #0b1020 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(960px, 92vw);
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 5rem 0 4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.kicker {
+  display: inline-block;
+  margin: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0.25rem 0 0;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.15;
+}
+
+.subtitle {
+  margin: 0.8rem 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.summary {
+  max-width: 65ch;
+  margin-bottom: 1.5rem;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.btn {
+  border: 1px solid var(--line);
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  border-color: transparent;
+  background: var(--accent-strong);
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+.section.alt {
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.06rem;
+}
+
+.card-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.chips span {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+
+a {
+  color: #a8c0ff;
+}
+
+footer {
+  padding: 2rem 0 3rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
